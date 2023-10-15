@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js"></script>
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #map {
+        width: 100vw;
+        height: 100vh;
+      }
+    </style>
+    <title>Lakshit Corona Map</title>
+  </head>
+  <body>
+    <div id="map"></div>
+  </body>
+  <script>
+    mapboxgl.accessToken =
+      "pk.eyJ1IjoibGFrc2hpdGphaW4iLCJhIjoiY2xub3NqN2hyMG1zbjJrb2QzMHFiMHUyNSJ9.2uwfYSXxEGl45drC59paRw";
+    var map = new mapboxgl.Map({
+      container: "map",
+      style: "mapbox://styles/mapbox/dark-v10",
+      zoom: 1,
+    });
+  </script>
+  <script src="index.js"></script>
+</html>
