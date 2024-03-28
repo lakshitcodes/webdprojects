@@ -3,6 +3,7 @@ let userSeq = [];
 
 let btns = ["yellow", "red", "purple", "green"];
 
+let score = 0;
 let started = false;
 let level = 0;
 let h2 = document.querySelector("h2");
@@ -71,6 +72,12 @@ for (btn of allBtns) {
 }
 
 function reset() {
+  score = Math.max(score, level);
+  if (score > 0) {
+    let heading = document.querySelector("p");
+    heading.innerText = `High Score : ${score}`;
+    heading.style.display = "inline";
+  }
   started = false;
   gameSeq = [];
   userSeq = [];

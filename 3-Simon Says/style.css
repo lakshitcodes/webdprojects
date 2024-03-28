@@ -30,3 +30,11 @@ body {
 .userflash {
   background-color: green;
 }
+.high {
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
